@@ -38,8 +38,9 @@ async function main() {
             console.log("==> Deleting \"" + ownerOfRepository + "/" + repositoryContainingBranches + "/" + branch + "\" branch")
             console.log('client', client);
             console.log('client.git', client.git);
+            console.log('client.rest.git', client.rest.git);
             try {
-                await client.git.deleteRef({
+                await client.rest.git.deleteRef({
                     owner: ownerOfRepository,
                     repo: repositoryContainingBranches,
                     ref: "heads/" + branch
