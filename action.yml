@@ -1,6 +1,6 @@
 name: Delete multiple branches
 description: Delete multiple branches from repository
-author: dawidd6
+author: homebridge
 branding:
   icon: git-branch
   color: red
@@ -32,5 +32,5 @@ inputs:
     required: false
     default: false
 runs:
-  using: node12
+  using: node20
   main: main.js
